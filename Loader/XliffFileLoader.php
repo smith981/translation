@@ -170,9 +170,11 @@ class XliffFileLoader implements LoaderInterface
     {
         $internalErrors = libxml_use_internal_errors(true);
 
+        /*
         if (!@$dom->schemaValidateSource($schema)) {
             throw new InvalidResourceException(sprintf('Invalid resource provided: "%s"; Errors: %s', $file, implode("\n", $this->getXmlErrors($internalErrors))));
         }
+        */
 
         $dom->normalizeDocument();
 
