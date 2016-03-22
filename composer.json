@@ -1,5 +1,5 @@
 {
-    "name": "smith981/translation",
+    "name": "symfony/translation",
     "type": "library",
     "description": "Symfony Translation Component, with XSD schema validator removed. See https://github.com/jonseg/crud-admin-generator/issues/86",
     "keywords": [],
