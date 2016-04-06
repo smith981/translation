@@ -90,7 +90,7 @@ class XliffFileLoader implements LoaderInterface
         try {
             $dom = XmlUtils::loadFile($file);
         } catch (\InvalidArgumentException $e) {
-            throw new InvalidResourceException(sprintf('Unable to load "%s": %s', $file, $e->getMessage()), $e->getCode(), $e);
+            //throw new InvalidResourceException(sprintf('Unable to load "%s": %s', $file, $e->getMessage()), $e->getCode(), $e);
         }
 
         $internalErrors = libxml_use_internal_errors(true);
